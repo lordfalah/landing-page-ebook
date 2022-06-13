@@ -11,7 +11,7 @@ const NavBtn = ({ setIsOpen, isOpen, className }) => {
       className={`p-5 flex lg:hidden justify-between relative z-50 ${addClass}`}
     >
       <ListNav
-        className={`style-list relative transition-transform duration-300
+        className={`style-list relative transition-transform duration-300 w-16 h-16 md:w-20 md:h-20
         ${isOpen ? "scale-0 -translate-x-full" : "scale-100 translate-x-0"}`}
       >
         <span className="style-first-span">M</span>

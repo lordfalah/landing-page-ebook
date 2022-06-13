@@ -8,7 +8,7 @@
   /* ArticleCss.jsx */
 
   .width-ebook {
-    @apply max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full;
+    @apply max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full 2xl:max-w-[130%];
   }
 
   .style-paragraf {
@@ -21,18 +21,18 @@
   }
 
   .style-button {
-    @apply flex gap-5 items-center h-1/2;
+    @apply flex items-center h-1/2;
   }
 
   .style-heading {
     @apply text-white font-medium lg:text-4xl xl:text-5xl  
       lg:leading-relaxed xl:leading-normal sm:text-4xl text-3xl 
-      md:leading-relaxed;
+      md:leading-normal;
   }
 
   .style-display {
-    @apply flex w-full justify-between lg:justify-start sm:gap-10 
-      items-center my-5 gap-4;
+    @apply flex w-full justify-between lg:justify-start  
+      items-center my-5;
   }
 
   .style-article {
@@ -51,7 +51,7 @@
   }
 
   .style-list {
-    @apply text-white font-bold rounded-full w-20 h-20
+    @apply text-white font-bold rounded-full  
       bg-[#00BAC7] flex justify-center items-center text-lg;
   }
 }

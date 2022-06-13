@@ -8,7 +8,7 @@ const SaleProduct = ({ children }) => {
   return (
     <Fragment>
       <div className="flex justify-between gap-2 lg:gap-0 xl:gap-[30px] items-center ">
-        <Download className="w-8 h-8 stroke-white" />
+        <Download className="h-6 w-6 sm:h-8 sm:w-8 stroke-white" />
         <Paragraf
           className="font-bold text-white/60 lg:text-base 
             text-right md:text-sm"

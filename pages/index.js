@@ -22,8 +22,8 @@ export default function Home() {
       </Head>
 
       <header
-        className="w-full bg-cover bg-bottom bg-no-repeat relative 
-        overflow-hidden"
+        className={`w-full bg-cover bg-bottom bg-no-repeat  
+        overflow-hidden ${isOpen ? "fixed lg:relative" : "relative"}`}
         style={{ backgroundImage: `url("/img/hero.png")` }}
       >
         <Transparant variants="oval" />
@@ -51,11 +51,11 @@ export default function Home() {
           variants="btnClassic"
           setIsOpen={setIsOpen}
         >
-          <ListNav className="style-list">
+          <ListNav className="style-list w-24 h-24">
             <span className="style-first-span">M</span>
           </ListNav>
         </BackgroundNav>
-        <NavBtn setIsOpen={setIsOpen} />
+        <NavBtn isOpen={isOpen} setIsOpen={setIsOpen} />
 
         <div
           className={`bg-black/50 top-0 bottom-0 left-0 right-0 z-20 absolute 
@@ -66,7 +66,10 @@ export default function Home() {
         <Container>
           <ContentPage>
             <ArticleCss />
-            <BookCss className="absolute" hidden="sm:hidden md:block w-full" />
+            <BookCss
+              className="absolute sm:top-0 md:-top-5 lg:-top-10 2xl:-top-12"
+              variants="hidden"
+            />
           </ContentPage>
         </Container>
       </header>

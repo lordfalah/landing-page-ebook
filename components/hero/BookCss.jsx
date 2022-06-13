@@ -1,11 +1,16 @@
+import Image from "next/image";
 import React from "react";
 
-const BookCss = ({ className, hidden }) => {
+const BookCss = ({ className, variants }) => {
   const addClass = className ? className : "";
-  const hiddenClass = hidden ? hidden : "";
+
+  const styled = {
+    hidden: "sm:hidden md:block w-full",
+  };
+
   return (
-    <div className={`${hiddenClass} z-10`}>
-      <div className={`${addClass} sm:top-0 md:-top-5 lg:-top-9`}>
+    <div className={`${variants ? styled[variants] : ""} z-10`}>
+      <div className={`${addClass}`}>
         <img src="/img/ebook.png" alt="book" className="width-ebook" />
       </div>
     </div>
