@@ -7,10 +7,6 @@
 @layer components {
   /* ArticleCss.jsx */
 
-  .width-ebook {
-    @apply max-w-xs sm:max-w-sm md:max-w-md lg:max-w-full 2xl:max-w-[130%];
-  }
-
   .style-paragraf {
     @apply text-white/80 xl:text-xl font-normal xl:leading-9
       lg:text-lg lg:leading-8 md:text-base md:leading-7;
@@ -18,16 +14,6 @@
 
   .style-border {
     @apply border-t-4 border-t-white/40 block w-8;
-  }
-
-  .style-button {
-    @apply flex items-center h-1/2;
-  }
-
-  .style-heading {
-    @apply text-white font-medium lg:text-4xl xl:text-5xl  
-      lg:leading-relaxed xl:leading-normal sm:text-4xl text-3xl 
-      md:leading-normal;
   }
 
   .style-display {

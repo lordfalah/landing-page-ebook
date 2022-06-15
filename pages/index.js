@@ -10,6 +10,10 @@ import NavBtn from "../components/navbar/burger/NavBtn";
 import ListNav from "../components/navbar/ListNav";
 import Nav from "../components/navbar/Nav";
 import Transparant from "../components/transparant/Transparant";
+import SectionTitle from "../components/BodySection/SectionTitle";
+import SectionParagraf from "../components/BodySection/SectionParagraf";
+import ContainerDisplay from "../components/layout/ContainerDisplay";
+import SectionImage from "../components/BodySection/SectionImage";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +26,7 @@ export default function Home() {
       </Head>
 
       <header
-        className={`w-full bg-cover bg-bottom bg-no-repeat  
+        className={`w-full bg-cover bg-bottom bg-no-repeat top-0 pb-24
         overflow-hidden ${isOpen ? "fixed lg:relative" : "relative"}`}
         style={{ backgroundImage: `url("/img/hero.png")` }}
       >
@@ -63,6 +67,7 @@ export default function Home() {
             isOpen ? "scale-100" : "scale-0 rounded-full"
           }`}
         ></div>
+
         <Container>
           <ContentPage>
             <ArticleCss />
@@ -73,6 +78,19 @@ export default function Home() {
           </ContentPage>
         </Container>
       </header>
+
+      <section className="mb-24 mt-0 md:mt-14 lg:mt-20 xl:mt-32">
+        <Container className="p-5 md:p-0 space-y-16">
+          <ContainerDisplay
+            className="grid gap-5  items-center lg:grid-cols-2 xl:grid-cols-3 
+          md:flex-nowrap justify-items-end"
+          >
+            <SectionTitle />
+            <SectionParagraf />
+          </ContainerDisplay>
+          <SectionImage />
+        </Container>
+      </section>
     </Fragment>
   );
 }
