@@ -10,6 +10,7 @@ const BuyBook = ({ className }) => {
       <img
         src="/img/ebook2.png"
         className="w-full sm:w-2/3 mx-auto lg:w-full xl:w-3/4 2xl:w-2/3"
+        alt="ebook tailwind css"
       />
 
       <ContainerDisplay
