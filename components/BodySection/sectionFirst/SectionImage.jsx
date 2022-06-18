@@ -1,8 +1,8 @@
 import React from "react";
-import Heading from "../font/Heading";
-import Paragraf from "../font/Paragraf";
-import ContainerDisplay from "../layout/ContainerDisplay";
-import UtilitiesList from "./imgUtiliti/UtilitiesList";
+import Heading from "../../font/Heading";
+import Paragraf from "../../font/Paragraf";
+import ContainerDisplay from "../../layout/ContainerDisplay";
+import UtilitiesList from "../imgUtiliti/UtilitiesList";
 
 const dataList = [
   {
@@ -48,7 +48,8 @@ const SectionImage = () => {
                   {data.title}
                 </Heading>
                 <Paragraf
-                  className="text-[#272D3E] text-center md:tracking-wide text-base xl:text-lg"
+                  className="text-[#272D3E] text-center md:tracking-wide text-base xl:text-lg 
+                  lg:leading-8"
                   variants="textNormal"
                 >
                   {data.subTitle}

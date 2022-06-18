@@ -73,9 +73,12 @@ const ArticleCss = () => {
       </div>
 
       <div className="my-10 mb-40 md:my-20 lg:mb-32 2xl:mb-44 space-y-4">
-        <div className="flex items-center gap-5 ">
-          <SpanBorder className="border-white/40"></SpanBorder>
-          <SpanTitle className="text-white/40 tracking-wider">
+        <div className="flex items-center gap-5">
+          <SpanBorder
+            className="border-white/40"
+            variants="borderPx"
+          ></SpanBorder>
+          <SpanTitle className="text-white/40 tracking-wider text-sm">
             TEKNOLOGI YANG DIGUNAKAN
           </SpanTitle>
         </div>
