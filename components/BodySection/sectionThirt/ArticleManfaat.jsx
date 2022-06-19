@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import Heading from "../../font/Heading";
 import Paragraf from "../../font/Paragraf";
@@ -33,7 +32,7 @@ const ArticleManfaat = () => {
         <SpanTitle className="text-[#00BAC7] text-sm">MANFAAT BUKU</SpanTitle>
       </div>
 
-      <article className="flex flex-col gap-5">
+      <article className="flex flex-col gap-6 lg:gap-5 xl:gap-7 2xl:gap-8">
         <div>
           <Heading className="text-[#272D3E]" variants="styleSubTitle">
             Manfaat yang kamu dapatkan ketika membeli buku Tailwind CSS ini
@@ -59,7 +58,7 @@ const ArticleManfaat = () => {
                 key={idx}
                 className="gap-4 sm:gap-5 md:gap-6 flex items-center justify-center break-words"
               >
-                <div className="bg-[#20D27D] rounded-full p-1 lg:p-2">
+                <div className="bg-[#20D27D] rounded-full p-1 xl:p-2">
                   <RawCheck className="w-6 h-6 xl:stroke-white fill-white" />
                 </div>
                 <Paragraf

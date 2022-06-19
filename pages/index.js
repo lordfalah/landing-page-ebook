@@ -17,6 +17,8 @@ import TitlePengantar from "../components/BodySection/sectionSecond/TitlePengant
 import SubPengantar from "../components/BodySection/sectionSecond/SubPengantar";
 import ArticleManfaat from "../components/BodySection/sectionThirt/ArticleManfaat";
 import BuyBook from "../components/BodySection/sectionThirt/BuyBook";
+import MoreArticle from "../components/BodySection/sectionFourth/MoreArticle";
+import MoreImage from "../components/BodySection/sectionFourth/MoreImage";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -98,7 +100,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="my-20 bg-[#00BAC7]">
+      <section className="my-40 bg-[#00BAC7]">
         <Container className="p-5 md:p-0">
           <ContainerDisplay
             className="grid gap-6 lg:gap-32 xl:gap-40 lg:grid-cols-3 
@@ -110,11 +112,20 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="my-20">
-        <Container className="p-5">
+      <section className="my-40">
+        <Container className="p-5 sm:p-0">
           <ContainerDisplay className="grid lg:grid-cols-2 gap-0 lg:gap-8">
             <ArticleManfaat />
             <BuyBook className="hidden lg:block" />
+          </ContainerDisplay>
+        </Container>
+      </section>
+
+      <section className="my-40">
+        <Container className="p-5 sm:p-0">
+          <ContainerDisplay className="grid lg:grid-cols-2">
+            <MoreImage className="hidden lg:block" />
+            <MoreArticle />
           </ContainerDisplay>
         </Container>
       </section>
