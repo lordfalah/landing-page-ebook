@@ -1,19 +1,21 @@
 import Image from "next/image";
 import React from "react";
 
-const MoreImage = ({ className }) => {
+const BookBefore = ({ className }) => {
   const addClass = className ? className : "";
+
   return (
-    <div className={`${addClass} 2xl:-mt-16`}>
+    <div className={`${addClass}`}>
       <Image
-        src="/img/bookSocial.png"
-        alt="Thumbnail"
+        src="/img/books.png"
         width="100%"
         height="100%"
         layout="responsive"
+        alt="ebook tailwind"
+        objectFit="contain"
       />
     </div>
   );
 };
 
-export default MoreImage;
+export default BookBefore;

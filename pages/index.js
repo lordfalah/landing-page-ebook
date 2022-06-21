@@ -19,9 +19,13 @@ import ArticleManfaat from "../components/BodySection/sectionThirt/ArticleManfaa
 import BuyBook from "../components/BodySection/sectionThirt/BuyBook";
 import MoreArticle from "../components/BodySection/sectionFourth/MoreArticle";
 import MoreImage from "../components/BodySection/sectionFourth/MoreImage";
+import BeforeArticle from "../components/BodySection/sectionFive/BeforeArticle";
+import CourselImage from "../components/BodySection/sectionFive/CourselImage";
+import Paragraf from "../components/font/Paragraf";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
+  const [count, setCount] = useState(1);
   return (
     <Fragment>
       <Head>
@@ -127,6 +131,21 @@ export default function Home() {
             <MoreImage className="hidden lg:block" />
             <MoreArticle />
           </ContainerDisplay>
+        </Container>
+      </section>
+
+      <section className="my-40">
+        <Container className="p-5 sm:p-0">
+          <div className="lg:space-y-20 2xl:space-y-16">
+            <BeforeArticle />
+            <CourselImage setCount={setCount} />
+          </div>
+          <Paragraf
+            className="text-[#272D3ECC] text-center text-md xl:text-xl
+            mt-0 lg:mt-5 2xl:mt-0"
+          >
+            Halaman 1 dari {count}
+          </Paragraf>
         </Container>
       </section>
     </Fragment>

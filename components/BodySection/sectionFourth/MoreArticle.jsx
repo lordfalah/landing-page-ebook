@@ -22,7 +22,7 @@ const MoreArticle = () => {
         <Heading className="#272D3E" variants="styleSubTitle">
           Buku dengan studi kasus nyata, juga komunitas yang ramah
         </Heading>
-        <MoreImage className="block lg:hidden" />
+        <MoreImage className="mx-auto block lg:hidden w-full md:max-w-xl lg:max-w-full" />
         <Paragraf
           className="text-[#272D3ECC] md:tracking-wide text-lg xl:text-xl
           lg:leading-8"

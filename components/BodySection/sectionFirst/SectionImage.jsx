@@ -30,7 +30,10 @@ const dataList = [
 
 const SectionImage = () => {
   return (
-    <ContainerDisplay className="flex gap-16 sm:grid sm:gap-7 sm:grid-cols-2 lg:grid-cols-3">
+    <ContainerDisplay
+      className="flex gap-16 lg:gap-11 sm:grid sm:gap-7 
+      sm:grid-cols-2 lg:grid-cols-3"
+    >
       {dataList.map((data) => {
         return (
           <div
