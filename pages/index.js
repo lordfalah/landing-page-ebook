@@ -22,6 +22,8 @@ import MoreImage from "../components/BodySection/sectionFourth/MoreImage";
 import BeforeArticle from "../components/BodySection/sectionFive/BeforeArticle";
 import CourselImage from "../components/BodySection/sectionFive/CourselImage";
 import Paragraf from "../components/font/Paragraf";
+import PriceArticle from "../components/BodySection/sectionSix/PriceArticle";
+import ProductPrice from "../components/BodySection/sectionSix/ProductPrice";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -145,6 +147,24 @@ export default function Home() {
             mt-0 lg:mt-5 2xl:mt-0"
           >
             Halaman 1 dari {count}
+          </Paragraf>
+        </Container>
+      </section>
+
+      <section
+        className="my-40 bg-cover bg-no-repeat pt-64 pb-32 sm:pb-48 md:pb-52 lg:pt-56 xl:pb-60"
+        style={{ backgroundImage: `url("/img/bgDark.png")` }}
+      >
+        <Container className="p-5 sm:p-0 space-y-14 sm:space-y-16 lg:space-y-20 xl:space-y-24">
+          <PriceArticle />
+          <ProductPrice />
+          <Paragraf
+            className="text-white/80 md:tracking-wide text-lg xl:text-xl
+            lg:leading-8 text-center w-full lg:w-1/2 2xl:w-1/2 mx-auto"
+            variants="textNormal"
+          >
+            *Buku digital akan dikirimkan ke alamat email kamu *Buku fisik
+            dikirim 7 hari setelah pemesanan
           </Paragraf>
         </Container>
       </section>

@@ -31,35 +31,32 @@ const dataList = [
 const SectionImage = () => {
   return (
     <ContainerDisplay
-      className="flex gap-16 lg:gap-11 sm:grid sm:gap-7 
+      className="flex gap-16 lg:gap-9 sm:grid sm:gap-7 
       sm:grid-cols-2 lg:grid-cols-3"
     >
       {dataList.map((data) => {
         return (
-          <div
+          <UtilitiesList
             className={`${
-              data.id === 3 ? "sm:col-span-2 lg:col-span-1" : "col-span-1"
+              data.id === 3
+                ? "sm:col-span-2 lg:col-span-1 w-full sm:w-1/2 lg:w-full mx-auto"
+                : "col-span-1"
             }`}
-            key={data.id}
+            source={data}
           >
-            <UtilitiesList
-              className={`flex gap-7 sm:justify-center`}
-              source={data}
-            >
-              <div className="space-y-1">
-                <Heading className="text-lg md:text-xl text-[black] text-center">
-                  {data.title}
-                </Heading>
-                <Paragraf
-                  className="text-[#272D3E] text-center md:tracking-wide text-base xl:text-lg 
+            <div className="space-y-1">
+              <Heading className="text-lg md:text-xl text-[black] text-center">
+                {data.title}
+              </Heading>
+              <Paragraf
+                className="text-[#272D3E] text-center md:tracking-wide text-base xl:text-lg 
                   lg:leading-8"
-                  variants="textNormal"
-                >
-                  {data.subTitle}
-                </Paragraf>
-              </div>
-            </UtilitiesList>
-          </div>
+                variants="textNormal"
+              >
+                {data.subTitle}
+              </Paragraf>
+            </div>
+          </UtilitiesList>
         );
       })}
     </ContainerDisplay>

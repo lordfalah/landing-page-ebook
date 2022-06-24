@@ -4,8 +4,8 @@ const Paragraf = ({ className, children, variants }) => {
   const addClass = className ? className : "";
   const styled = {
     textNormal: "tracking-normal font-normal md:leading-7",
-    textMedium: "font-medium",
-    textLight: "",
+    textMedium: "font-medium md:leading-7",
+    textSemiBold: "font-semibold md:leading-7",
   };
 
   return (

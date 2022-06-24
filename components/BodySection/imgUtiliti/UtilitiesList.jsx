@@ -5,11 +5,7 @@ const UtilitiesList = ({ className, children, source }) => {
 
   return (
     <article className={`${addClass}`}>
-      <div
-        className={`${
-          source.id === 3 ? "w-full sm:w-1/2 lg:w-full space-y-4" : "space-y-4"
-        }`}
-      >
+      <div className={`${source.id === 3 ? "w-full space-y-4" : "space-y-4"}`}>
         <img
           className="w-full"
           src={`/tailwind/${source.img}.png`}
