@@ -37,6 +37,7 @@ const SectionImage = () => {
       {dataList.map((data) => {
         return (
           <UtilitiesList
+            key={data.id}
             className={`${
               data.id === 3
                 ? "sm:col-span-2 lg:col-span-1 w-full sm:w-1/2 lg:w-full mx-auto"
