@@ -179,12 +179,12 @@ const ProductPrice = () => {
               </ul>
             </article>
             <Button
-              className="bg-[#00BAC7] rounded-md py-4 w-full
+              className="bg-[#00BAC7] rounded-md py-4 w-full 
               drop-shadow-lg shadow-[#4A72FF40] shadow-lg mt-7 md:mt-9 lg:mt-8
               xl:mt-11 lg:drop-shadow-xl xl:shadow-xl xl:shadow-[#4A72FF40]"
             >
               <Paragraf
-                className="text-[#F4F7FF] text-base lg:text-lg"
+                className="text-[#F4F7FF] text-base lg:text-lg cursor-pointer"
                 variants="textSemiBold"
               >
                 Beli Sekarang

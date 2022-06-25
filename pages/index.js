@@ -24,6 +24,8 @@ import CourselImage from "../components/BodySection/sectionFive/CourselImage";
 import Paragraf from "../components/font/Paragraf";
 import PriceArticle from "../components/BodySection/sectionSix/PriceArticle";
 import ProductPrice from "../components/BodySection/sectionSix/ProductPrice";
+import WriteImage from "../components/BodySection/sectionSeven/WriteImage";
+import WriteArticle from "../components/BodySection/sectionSeven/WriteArticle";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -166,6 +168,18 @@ export default function Home() {
             *Buku digital akan dikirimkan ke alamat email kamu *Buku fisik
             dikirim 7 hari setelah pemesanan
           </Paragraf>
+        </Container>
+      </section>
+
+      <section className="my-40">
+        <Container className="p-5 sm:p-0">
+          <ContainerDisplay
+            className="flex flex-col lg:flex-row lg:flex-nowrap 
+            lg:gap-10 items-center"
+          >
+            <WriteImage className="hidden lg:block w-full" />
+            <WriteArticle className="w-full lg:w-full" />
+          </ContainerDisplay>
         </Container>
       </section>
     </Fragment>
