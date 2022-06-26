@@ -43,7 +43,7 @@ const ArticleManfaat = () => {
 
         <Paragraf
           className="text-[#272D3E] md:tracking-wide text-lg xl:text-xl
-          lg:leading-8 mt-4 lg:mt-0"
+          lg:!leading-8 mt-4 lg:mt-0"
           variants="textNormal"
         >
           &quot;Buku itu seperti cermin: kalau yang berkaca padanya adalah
@@ -63,7 +63,7 @@ const ArticleManfaat = () => {
                 </div>
                 <Paragraf
                   className="text-[#272D3E] md:tracking-wide text-base xl:text-lg 
-                  lg:leading-8"
+                  lg:!leading-[1.875rem]"
                   variants="textNormal"
                 >
                   {data.text}

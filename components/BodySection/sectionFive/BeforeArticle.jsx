@@ -25,10 +25,10 @@ const BeforeArticle = () => {
 
         <Paragraf
           className="text-[#272D3ECC] md:tracking-wide text-lg xl:text-xl
-          lg:leading-8"
+          lg:!leading-8"
           variants="textNormal"
         >
-          Klik pada gambar halaman di sebelah kanan buku untuk melihat lebih
+          Geser pada gambar halaman di sebelah kanan buku untuk melihat lebih
           detail halaman buku tersebut dan membaca isinya.
         </Paragraf>
       </article>

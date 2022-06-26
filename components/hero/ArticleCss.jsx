@@ -15,7 +15,7 @@ const ArticleCss = () => {
   return (
     <div className="style-article">
       <div className="w-full xl:w-3/4">
-        <Heading variants="styleTitle" className="text-white">
+        <Heading variants="styleTitle" className="text-white  ">
           Sebuah framework CSS untuk developer yang memiliki phobia terhadap CSS
         </Heading>
       </div>
@@ -45,7 +45,7 @@ const ArticleCss = () => {
 
       <article className="sm:my-0 md:my-12 w-full lg:w-11/12 xl:w-3/4">
         <Paragraf
-          className="text-white xl:text-xl md:text-base lg:text-lg"
+          className="text-white xl:text-xl md:text-base lg:text-lg xl:leading-8"
           variants="textNormal"
         >
           Buku ini akan mengajarkan kamu konsep utility-first pada CSS dan

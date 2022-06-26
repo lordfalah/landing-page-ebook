@@ -45,13 +45,13 @@ const SectionImage = () => {
             }`}
             source={data}
           >
-            <div className="space-y-1">
+            <div className="space-y-2 lg:space-y-3">
               <Heading className="text-lg md:text-xl text-[black] text-center">
                 {data.title}
               </Heading>
               <Paragraf
                 className="text-[#272D3E] text-center md:tracking-wide text-base xl:text-lg 
-                  lg:leading-8"
+                  lg:!leading-8"
                 variants="textNormal"
               >
                 {data.subTitle}

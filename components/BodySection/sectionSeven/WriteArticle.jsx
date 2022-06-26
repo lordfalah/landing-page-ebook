@@ -24,7 +24,7 @@ const WriteArticle = ({ className }) => {
 
         <Paragraf
           className="text-[#272D3ECC] md:tracking-wide text-base sm:text-lg 
-          lg:leading-8 lg:text-base text-justify"
+           lg:leading-loose lg:text-base text-justify"
           variants="textNormal"
         >
           &quot;Halo, saya Nauval. Mungkin nama ini terdengar asing di telinga

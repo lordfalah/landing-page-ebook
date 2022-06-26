@@ -1,7 +1,7 @@
 import React from "react";
 import ArrowRight from "../../icon/ArrowRight";
 
-const AnimateArrow = ({ className }) => {
+const AnimateArrow = ({ className, rotate }) => {
   const addClass = className ? className : "";
   return (
     <div
@@ -10,8 +10,8 @@ const AnimateArrow = ({ className }) => {
         shadow-[#00BAC773] ${addClass}`}
     >
       <ArrowRight
-        className="w-6 h-6 fill-white stroke-0 group-hover:animate-ping  
-    "
+        className={`w-6 h-6 fill-white stroke-0 group-hover:animate-ping 
+        ${rotate && rotate}`}
       />
     </div>
   );

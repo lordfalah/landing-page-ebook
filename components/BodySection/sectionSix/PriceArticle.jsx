@@ -25,7 +25,7 @@ const PriceArticle = () => {
 
         <Paragraf
           className="text-[#FFFFFFCC] md:tracking-wide text-lg xl:text-xl
-            lg:leading-8"
+            lg:!leading-8"
           variants="textNormal"
         >
           Dilarang memperjualbelikan atau memperbanyak tanpa seizin penulis. Hak

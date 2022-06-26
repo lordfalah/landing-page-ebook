@@ -26,6 +26,9 @@ import PriceArticle from "../components/BodySection/sectionSix/PriceArticle";
 import ProductPrice from "../components/BodySection/sectionSix/ProductPrice";
 import WriteImage from "../components/BodySection/sectionSeven/WriteImage";
 import WriteArticle from "../components/BodySection/sectionSeven/WriteArticle";
+import TestimonalArticle from "../components/BodySection/sectionEight/TestimonalArticle";
+import CourselCards from "../components/BodySection/sectionEight/CourselCards";
+import AnimateArrow from "../components/BodySection/sectionFive/AnimateArrow";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -96,7 +99,10 @@ export default function Home() {
       </header>
 
       <section className="mb-40 mt-0 md:mt-14 lg:mt-20 xl:mt-32">
-        <Container className="p-5 md:p-0 space-y-16">
+        <Container
+          className="p-5 md:p-0 space-y-11 sm:space-y-10 
+          md:space-y-12 lg:space-y-14"
+        >
           <ContainerDisplay
             className="grid gap-5 items-center lg:grid-cols-2 xl:grid-cols-3 
           md:flex-nowrap justify-items-end"
@@ -121,7 +127,7 @@ export default function Home() {
       </section>
 
       <section className="my-40">
-        <Container className="p-5 sm:p-0">
+        <Container className="px-5 sm:px-0">
           <ContainerDisplay className="grid lg:grid-cols-2 gap-0 lg:gap-8">
             <ArticleManfaat />
             <BuyBook className="hidden lg:block" />
@@ -130,7 +136,7 @@ export default function Home() {
       </section>
 
       <section className="my-40">
-        <Container className="p-5 sm:p-0">
+        <Container className="px-5 sm:px-0">
           <ContainerDisplay className="grid lg:grid-cols-2">
             <MoreImage className="hidden lg:block" />
             <MoreArticle />
@@ -139,7 +145,7 @@ export default function Home() {
       </section>
 
       <section className="my-40">
-        <Container className="p-5 sm:p-0">
+        <Container className="px-5 sm:px-0">
           <div className="lg:space-y-20 2xl:space-y-16">
             <BeforeArticle />
             <CourselImage setCount={setCount} />
@@ -157,12 +163,12 @@ export default function Home() {
         className="my-40 bg-cover bg-no-repeat pt-64 pb-32 sm:pb-48 md:pb-52 lg:pt-56 xl:pb-60"
         style={{ backgroundImage: `url("/img/bgDark.png")` }}
       >
-        <Container className="p-5 sm:p-0 space-y-14 sm:space-y-16 lg:space-y-20 xl:space-y-24">
+        <Container className="px-5 sm:px-0 space-y-14 sm:space-y-16 lg:space-y-20 xl:space-y-24">
           <PriceArticle />
           <ProductPrice />
           <Paragraf
             className="text-white/80 md:tracking-wide text-lg xl:text-xl
-            lg:leading-8 text-center w-full lg:w-1/2 2xl:w-1/2 mx-auto"
+            lg:!leading-8 text-center w-full lg:w-1/2 2xl:w-1/2 mx-auto"
             variants="textNormal"
           >
             *Buku digital akan dikirimkan ke alamat email kamu *Buku fisik
@@ -172,7 +178,7 @@ export default function Home() {
       </section>
 
       <section className="my-40">
-        <Container className="p-5 sm:p-0">
+        <Container className="px-5 md:px-0">
           <ContainerDisplay
             className="flex flex-col lg:flex-row lg:flex-nowrap 
             lg:gap-10 items-center"
@@ -180,6 +186,29 @@ export default function Home() {
             <WriteImage className="hidden lg:block w-full" />
             <WriteArticle className="w-full lg:w-full" />
           </ContainerDisplay>
+        </Container>
+      </section>
+
+      <section className="my-40">
+        <Container
+          className="bg-[#EDFCFD] box-border py-16 p-5 md:px-14 
+          md:py-24 xl:py-28 xl:px-16 rounded-sm sm:rounded-2xl space-y-7 md:space-y-8 
+          lg:space-y-9 xl:space-y-12 relative"
+        >
+          <AnimateArrow
+            className="absolute hidden md:flex items-center 
+            w-10 h-10 md:w-12 md:h-12 lg:h-14 lg:w-14 justify-center
+            z-10 right-5 bottom-1/3 translate-y-1/3"
+          />
+
+          <AnimateArrow
+            className="absolute hidden md:flex items-center 
+            w-10 h-10 md:w-12 md:h-12 lg:h-14 lg:w-14 justify-center
+            z-10 left-5 bottom-1/3 translate-y-1/3"
+            rotate="rotate-180"
+          />
+          <TestimonalArticle />
+          <CourselCards />
         </Container>
       </section>
     </Fragment>

@@ -25,7 +25,7 @@ const MoreArticle = () => {
         <MoreImage className="mx-auto block lg:hidden w-full md:max-w-xl lg:max-w-full" />
         <Paragraf
           className="text-[#272D3ECC] md:tracking-wide text-lg xl:text-xl
-          lg:leading-8"
+          lg:!leading-8 mb-5 sm:mb-6 md:mb-7 lg:!mb-8"
           variants="textNormal"
         >
           Buku ini diakhiri dengan membangun website yang responsive dengan

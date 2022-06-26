@@ -7,7 +7,7 @@ const SectionParagraf = () => {
     <Fragment>
       <Paragraf
         className="text-[#272D3E] md:tracking-wide text-lg xl:text-xl 
-        xl:col-span-2 lg:w-full xl:w-2/3 lg:leading-8"
+        xl:col-span-2 lg:w-full xl:w-2/3 lg:!leading-8"
         variants="textNormal"
       >
         Buku ini bukan hanya untuk front-end developer yang ingin meningkatkan
