@@ -13,7 +13,7 @@ const CourselImage = ({ setCount }) => {
     <div className="relative w-full flex justify-between items-center">
       <BookBefore className="w-1/2 2xl:w-[45%] hidden lg:block" />
       <div className="overflow-hidden w-full lg:w-1/2">
-        <div className="relative group hover:cursor-grabbing my-5 sm:my-0">
+        <div className="relative group hover:cursor-grabbing my-11 sm:my-0">
           <AnimateArrow
             className="absolute z-10 bottom-1/2 translate-y-1/2 
             w-11 h-11 sm:w-12 sm:h-12 md:w-14 md:h-14 right-7 
@@ -26,7 +26,6 @@ const CourselImage = ({ setCount }) => {
             slidesPerView={1}
             onSlideNextTransitionStart={() => setCount((acc) => acc + 1)}
             onSlidePrevTransitionStart={() => setCount((acc) => acc - 1)}
-            onSwiper={(swiper) => console.log(swiper)}
           >
             {[1, 2, 3].map((images) => {
               return (

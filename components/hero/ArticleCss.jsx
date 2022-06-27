@@ -28,7 +28,8 @@ const ArticleCss = () => {
 
           <div className="space-y-6">
             <Button
-              className="style-button bg-[#00BAC7] gap-4 rounded-full"
+              className="style-button bg-[#00BAC7] gap-4 rounded-full 
+              py-3 px-5 sm:py-2 sm:px-14 md:py-2 md:px-6 lg:py-4 lg:px-9"
               variants="btnEffect"
             >
               <SpanTitle className="font-bold xl:text-xl md:text-base lg:text-lg">
@@ -37,7 +38,9 @@ const ArticleCss = () => {
               <Arrow className="h-8 w-8" />
             </Button>
             <div className="space-y-1">
-              <SaleProduct>SUDAH TERJUAL</SaleProduct>
+              <SaleProduct className="text-white/60" variants="white">
+                SUDAH TERJUAL
+              </SaleProduct>
             </div>
           </div>
         </ContentPage>
@@ -57,7 +60,8 @@ const ArticleCss = () => {
       <div className="style-display flex-wrap sm:flex-nowrap gap-1 md:gap-4 lg:gap-10">
         <div className="block sm:hidden md:block">
           <Button
-            className="style-button gap-4 sm:gap-0 md:gap-4 bg-[#00BAC7] rounded-full"
+            className="style-button gap-4 sm:gap-0 md:gap-4 bg-[#00BAC7] rounded-full 
+            py-3 px-5 sm:py-2 sm:px-14 md:py-2 md:px-6 lg:py-4 lg:px-9"
             variants="btnEffect"
           >
             <SpanTitle className="font-bold sm:text-base">
@@ -68,7 +72,9 @@ const ArticleCss = () => {
         </div>
 
         <div className="space-y-1 sm:hidden md:block">
-          <SaleProduct>SUDAH TERJUAL </SaleProduct>
+          <SaleProduct className="text-white/60" variants="white">
+            SUDAH TERJUAL
+          </SaleProduct>
         </div>
       </div>
 
