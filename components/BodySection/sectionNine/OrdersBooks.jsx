@@ -17,14 +17,17 @@ const OrdersBooks = () => {
           HARGA BUKU
         </SpanTitle>
       </div>
-      <article className="text-center space-y-4">
-        <Heading className="text-[#272D3E] mt-2" variants="styleSubTitle">
+      <article className="text-center space-y-5 sm:space-y-4 md:space-y-5">
+        <Heading
+          className="text-[#272D3E] mt-2 lg:mt-4"
+          variants="styleSubTitle"
+        >
           Anda ingin segera memesan buku ini?
         </Heading>
 
         <Paragraf
           className="text-[#272D3ECC] md:tracking-wide text-lg xl:text-xl
-          lg:!leading-8"
+          lg:!leading-8 w-full sm:w-1/2 lg:w-2/5 xl:w-1/3 mx-auto"
           variants="textNormal"
         >
           Otak Kita butuh asupan nutrisi juga, tidak hanya perut saja.
@@ -33,14 +36,14 @@ const OrdersBooks = () => {
         <div
           className="flex w-full justify-center
             items-center my-5 sm:flex-nowrap gap-5 sm:gap-10 md:gap-14 lg:gap-10 
-            flex-row-reverse !mt-7 lg:!mt-9"
+            flex-row-reverse !mt-9 sm:!mt-10 md:!mt-12 lg:!mt-11 xl:!mt-12 xl:gap-14"
         >
           <Button
             className="bg-[#00BAC7] rounded-full py-2 flex items-center gap-2
-            px-3 sm:py-3 sm:px-8 md:py-3 md:px-6 lg:py-4 lg:px-9"
+            px-3 sm:py-3 sm:px-8 md:py-3 md:px-6 lg:py-4 lg:px-9 md:gap-4"
             variants="btnEffect"
           >
-            <SpanTitle className="font-bold xl:text-xl md:text-base lg:text-lg">
+            <SpanTitle className="font-bold text-base ">
               Beli Sekarang
             </SpanTitle>
             <Arrow className="h-8 w-8" />

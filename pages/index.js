@@ -30,6 +30,8 @@ import TestimonalArticle from "../components/BodySection/sectionEight/Testimonal
 import CourselCards from "../components/BodySection/sectionEight/CourselCards";
 import AnimateArrow from "../components/BodySection/sectionFive/AnimateArrow";
 import OrdersBooks from "../components/BodySection/sectionNine/OrdersBooks";
+import SkillArticle from "../components/BodySection/sectionTen/SkillArticle";
+import MoreMalaka from "../components/BodySection/sectionTen/MoreMalaka";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -193,8 +195,8 @@ export default function Home() {
       <section className="my-40">
         <Container
           className="bg-[#EDFCFD] box-border py-16 p-5 md:px-14 
-          md:py-24 xl:py-28 xl:px-16 rounded-sm sm:rounded-2xl 
-          space-y-7 md:space-y-8 lg:space-y-9 xl:space-y-12 relative"
+          md:py-24 xl:py-28 xl:px-16 rounded-sm sm:rounded-2xl group
+          space-y-12 sm:space-y-14 md:space-y-16 lg:space-y-16 xl:space-y-16 relative"
         >
           <AnimateArrow
             className="absolute hidden md:flex items-center 
@@ -211,13 +213,20 @@ export default function Home() {
           <TestimonalArticle />
           <CourselCards />
         </Container>
-
-        <section className="my-40">
-          <Container className="px-5 sm:px-0">
-            <OrdersBooks />
-          </Container>
-        </section>
       </section>
+
+      <section className="my-40">
+        <Container className="px-5 sm:px-0">
+          <OrdersBooks />
+        </Container>
+      </section>
+
+      <footer className="mt-40 bg-[#272D3E] rounded-tr-[3.5rem]">
+        <Container className="px-5 sm:px-0 pt-16 md:pt-24 space-y-28 md:space-y-32 lg:space-y-36">
+          <SkillArticle />
+          <MoreMalaka />
+        </Container>
+      </footer>
     </Fragment>
   );
 }

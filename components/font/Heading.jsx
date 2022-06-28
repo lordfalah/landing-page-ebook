@@ -14,7 +14,7 @@ const Heading = ({ className, children, variants }) => {
     <h1
       className={`font-sans ${addClass} ${
         variants ? styled[variants] : ""
-      } font-medium break-words`}
+      } break-words`}
     >
       {children}
     </h1>
