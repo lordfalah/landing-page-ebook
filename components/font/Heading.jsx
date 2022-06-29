@@ -7,6 +7,8 @@ const Heading = ({ className, children, variants }) => {
     styleSubTitle:
       "leading-normal md:leading-10 lg:leading-[44px] font-medium text-2xl md:text-3xl xl:text-[32px]",
     styleMedium: "font-sans font-medium leading-relaxed tracking-wide",
+    styleFirst:
+      "first-line:uppercase first-line:tracking-widest first-letter:font-normal first-letter:text-white font-serif",
   };
 
   const addClass = className ? className : "";

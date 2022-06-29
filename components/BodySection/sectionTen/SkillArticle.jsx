@@ -32,7 +32,7 @@ const SkillArticle = () => {
             className="text-[#F4F7FF] text-base lg:text-lg cursor-pointer"
             variants="textSemiBold"
           >
-            Mendaftar
+            Pusat Bantuan
           </Paragraf>
         </Button>
 

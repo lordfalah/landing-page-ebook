@@ -35,9 +35,4 @@
     @apply p-3 inline-block first-line:uppercase first-line:tracking-widest
       first-letter:font-normal first-letter:text-white font-serif;
   }
-
-  .style-list {
-    @apply text-white font-bold rounded-full  
-      bg-[#00BAC7] flex justify-center items-center;
-  }
 }

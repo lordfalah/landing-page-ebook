@@ -1,6 +1,7 @@
 import React from "react";
+import OvalCmp from "../../BodySection/imgUtiliti/OvalCmp";
+import Heading from "../../font/Heading";
 import Container from "../../layout/Container";
-import ListNav from "../ListNav";
 import BurgerNav from "./BurgerNav";
 
 const NavBtn = ({ setIsOpen, isOpen, className }) => {
@@ -10,14 +11,16 @@ const NavBtn = ({ setIsOpen, isOpen, className }) => {
     <Container
       className={`p-5 flex lg:hidden justify-between relative z-50 ${addClass}`}
     >
-      <ListNav
-        className={`style-list relative transition-transform duration-300 w-16 
-        h-16 md:w-20 md:h-20 ${
+      <OvalCmp
+        className={`lg:w-14 lg:h-14 relative transition-transform duration-300 w-14 
+        h-14  ${
           isOpen ? "scale-0 -translate-x-full" : "scale-100 translate-x-0"
         }`}
       >
-        <span className="style-first-span">M</span>
-      </ListNav>
+        <Heading className="text-2xl font-bold" variants="styleFirst">
+          M
+        </Heading>
+      </OvalCmp>
       <button
         type="button"
         className="text-white"

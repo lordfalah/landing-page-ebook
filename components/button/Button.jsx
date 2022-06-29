@@ -15,7 +15,7 @@ const Button = ({ children, className, variants, ...props }) => {
     <button
       {...props}
       type="button"
-      className={`${addClass} ${variants ? styled[variants] : ""} font-bold`}
+      className={`${addClass} ${variants ? styled[variants] : ""}`}
     >
       {children}
     </button>
